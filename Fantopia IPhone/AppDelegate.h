@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RestKit/RestKit.h>
+#import "API.h"
+#import "LoaderDelegate.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, LoaderDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
